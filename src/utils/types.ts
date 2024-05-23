@@ -10,4 +10,4 @@ export interface IProduct {
   price: number;
   rate: number;
 }
-export type TFilter = "donut" | "croissant" | "cake";
+export type TFilter = "donut" | "croissant" | "cake" | "all";

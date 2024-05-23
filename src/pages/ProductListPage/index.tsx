@@ -7,6 +7,7 @@ import { TFilter } from "../../utils/types";
 import { useState } from "react";
 import { CartButton } from "../../components/CartButton";
 import { MenuSVG } from "../../assets/icons/MenuSVG";
+import user from "../../assets/user.jpg";
 
 export function ProductListPage() {
   const [filter, setFilter] = useState<TFilter>("donut");
@@ -17,6 +18,7 @@ export function ProductListPage() {
         <div>
           <MenuSVG />
         </div>
+        <img src={user} alt="user" className={styles.image} />
       </div>
       <h1 className={styles.title}>Hi, Ihor! 👋</h1>
       <Search />
@@ -24,12 +26,14 @@ export function ProductListPage() {
       <div className={styles.listContainer}>
         <ProductList
           list={PRODUCTS.filter(
-            (item, index) => index % 2 && filter === item.type && item
+            (item, index) =>
+              !(index % 2) && (filter === item.type || filter === "all") && item
           )}
         />
         <ProductList
           list={PRODUCTS.filter(
-            (item, index) => !(index % 2) && filter === item.type && item
+            (item, index) =>
+              index % 2 && (filter === item.type || filter === "all") && item
           )}
           withShift
         />

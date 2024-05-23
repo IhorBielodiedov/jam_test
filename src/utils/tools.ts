@@ -8,5 +8,7 @@ export const filterIconHandler = (filter: TFilter) => {
       return "🥐";
     case "cake":
       return "🍰";
+    case "all":
+      return "🍬";
   }
 };
