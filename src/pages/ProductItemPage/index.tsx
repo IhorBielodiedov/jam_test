@@ -52,7 +52,10 @@ export function ProductItemPage() {
             <p className={styles.title}>${product.price * amount}</p>
             <div className={styles.amountController}>
               <SmallButton
-                onClick={() => setAmount((state) => state - 1)}
+                onClick={() => {
+                  TELEGRAM.HapticFeedback.impactOccurred("light");
+                  setAmount((state) => state - 1);
+                }}
                 title={"-"}
                 disabled={amount <= 0}
               />
@@ -60,12 +63,23 @@ export function ProductItemPage() {
                 <p>{amount}</p>
               </div>
               <SmallButton
-                onClick={() => setAmount((state) => state + 1)}
+                onClick={() => {
+                  TELEGRAM.HapticFeedback.impactOccurred("light");
+                  setAmount((state) => state + 1);
+                }}
                 title={"+"}
               />
             </div>
           </div>
-          <button className={styles.bigButton}>Add to bag</button>
+          <button
+            className={styles.bigButton}
+            onClick={() => {
+              TELEGRAM.HapticFeedback.impactOccurred("heavy");
+              TELEGRAM.showAlert("Donuts purchased successfully!");
+            }}
+          >
+            Add to bag
+          </button>
         </div>
       )}
     </div>
