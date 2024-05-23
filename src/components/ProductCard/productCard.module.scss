@@ -1,0 +1,40 @@
+.container {
+  background-color: var(--bg-card);
+  border-radius: 18px;
+  padding: 20px 13px 13px 13px;
+  text-decoration: none;
+  .image {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .title {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+  .text {
+    font-size: 8px;
+    line-height: 10px;
+    margin: 10px 0;
+    opacity: 0.5;
+  }
+  .purchase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .button {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: var(--bg-primary);
+      div {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

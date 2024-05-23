@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+.container {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .title {
+    margin: 25px 0;
+  }
+
+  .listContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}

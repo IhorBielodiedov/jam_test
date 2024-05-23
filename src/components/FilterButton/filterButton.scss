@@ -1,0 +1,33 @@
+.animated-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-card);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  transition: width 0.3s ease, border-radius 0.3s ease;
+
+  .text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  &.active {
+    width: 120px;
+    border-radius: 25px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    .text {
+      font-weight: 500;
+      opacity: 1;
+      margin-left: 10px;
+    }
+  }
+}
