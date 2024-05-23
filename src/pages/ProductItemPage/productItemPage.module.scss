@@ -1,8 +1,26 @@
 .container {
-  padding: 15px;
-  .image {
-    width: 100%;
-    padding: 0 15%;
+  position: relative;
+  min-height: 100vh;
+  padding: 0 15px;
+  background-color: var(--bg-third);
+  .imageContainer {
+    position: relative;
+    right: 40px;
+    padding-bottom: 20px;
+    width: calc(100% + 80px);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: var(--bg-secondary);
+    .image {
+      width: 100%;
+      padding: 0 15%;
+    }
+  }
+  .button {
+    position: absolute;
+    z-index: 100;
+    left: 15px;
+    top: 15px;
   }
   .content {
   }

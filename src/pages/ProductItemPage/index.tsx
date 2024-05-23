@@ -14,10 +14,18 @@ export function ProductItemPage() {
   }, [id]);
   return (
     <div className={styles.container}>
-      <Link to="/">back</Link>
+      <Link to="/" className={styles.button}>
+        back
+      </Link>
       {product && (
         <div className={styles.content}>
-          <img className={styles.image} src={product.img} alt={product.type} />
+          <div className={styles.imageContainer}>
+            <img
+              className={styles.image}
+              src={product.img}
+              alt={product.type}
+            />
+          </div>
           <p>{product.name}</p>
           <p>{product.composition}</p>
           <div className={styles.info}>
