@@ -3,10 +3,15 @@ import { PRODUCTS } from "../../utils/constants";
 import { useEffect, useState } from "react";
 import { IProduct } from "../../utils/types";
 import styles from "./productItemPage.module.scss";
+import { ArrowSVG } from "../../assets/icons/ArrowSVG";
+import { HeartSVG } from "../../assets/icons/HeartSVG";
+import { SmallButton } from "../../components/SmallButton";
 
 export function ProductItemPage() {
   const { id } = useParams();
   const [product, setProduct] = useState<IProduct>();
+  const [amount, setAmount] = useState<number>(1);
+
   useEffect(() => {
     if (id) {
       setProduct(PRODUCTS[parseInt(id)]);
@@ -14,9 +19,12 @@ export function ProductItemPage() {
   }, [id]);
   return (
     <div className={styles.container}>
-      <Link to="/" className={styles.button}>
-        back
-      </Link>
+      <div className={styles.header}>
+        <Link to="/" className={styles.button}>
+          <ArrowSVG />
+        </Link>
+        <HeartSVG />
+      </div>
       {product && (
         <div className={styles.content}>
           <div className={styles.imageContainer}>
@@ -26,8 +34,8 @@ export function ProductItemPage() {
               alt={product.type}
             />
           </div>
-          <p>{product.name}</p>
-          <p>{product.composition}</p>
+          <p className={styles.title}>{product.name}</p>
+          <p className={styles.description}>{product.composition}</p>
           <div className={styles.info}>
             <p>⭐️ {product.rate}</p>
             <p>🔥 {product.energyValue} kcal</p>
@@ -36,7 +44,22 @@ export function ProductItemPage() {
             </p>
           </div>
           <p>{product.description}</p>
-          <p>${product.price}</p>
+          <div className={styles.priceContainer}>
+            <p className={styles.title}>${product.price * amount}</p>
+            <div className={styles.amountController}>
+              <SmallButton
+                onClick={() => setAmount((state) => state - 1)}
+                title={"-"}
+                disabled={amount <= 0}
+              />
+              <p>{amount}</p>
+              <SmallButton
+                onClick={() => setAmount((state) => state + 1)}
+                title={"+"}
+              />
+            </div>
+          </div>
+          <button className={styles.bigButton}>Add to bag</button>
         </div>
       )}
     </div>

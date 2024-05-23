@@ -8,6 +8,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   active: TFilter;
   setActive: React.Dispatch<React.SetStateAction<TFilter>>;
 }
+
 const FilterButton: React.FC<Props> = ({ icon, filter, active, setActive }) => {
   return (
     <button

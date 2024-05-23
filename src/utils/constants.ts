@@ -48,7 +48,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Choco Donut",
     type: "donut",
     img: donut,
-    description: "Choco Donut description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Choco Donut composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -60,7 +61,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Choco Donut",
     type: "donut",
     img: donut,
-    description: "Choco Donut description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Choco Donut composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -72,7 +74,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Choco Donut",
     type: "donut",
     img: donut,
-    description: "Choco Donut description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Choco Donut composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -84,7 +87,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Choco Donut",
     type: "donut",
     img: donut,
-    description: "Choco Donut description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Choco Donut composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -96,7 +100,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Choco Donut",
     type: "donut",
     img: donut,
-    description: "Choco Donut description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Choco Donut composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -108,7 +113,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Choco Donut",
     type: "donut",
     img: donut,
-    description: "Choco Donut description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Choco Donut composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -120,7 +126,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Choco Donut",
     type: "donut",
     img: donut,
-    description: "Choco Donut description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Choco Donut composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -132,7 +139,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Choco Croissant",
     type: "croissant",
     img: croissant,
-    description: "Choco Croissant description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Choco Croissant composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -144,7 +152,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Vanila Croissant",
     type: "croissant",
     img: croissant,
-    description: "Vanila Croissant description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Vanila Croissant composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -156,7 +165,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Vanila Croissant",
     type: "croissant",
     img: croissant,
-    description: "Vanila Croissant description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Vanila Croissant composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -168,7 +178,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Vanila Croissant",
     type: "croissant",
     img: croissant,
-    description: "Vanila Croissant description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Vanila Croissant composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -180,7 +191,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Vanila Croissant",
     type: "croissant",
     img: croissant,
-    description: "Vanila Croissant description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Vanila Croissant composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -192,7 +204,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Vanila Croissant",
     type: "croissant",
     img: croissant,
-    description: "Vanila Croissant description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Vanila Croissant composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -204,7 +217,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Cheesecake",
     type: "cake",
     img: cake,
-    description: "Cheesecake description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Cheesecake composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -216,7 +230,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Cheesecake",
     type: "cake",
     img: cake,
-    description: "Cheesecake description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Cheesecake composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -228,7 +243,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Cheesecake",
     type: "cake",
     img: cake,
-    description: "Cheesecake description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Cheesecake composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -240,7 +256,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Cheesecake",
     type: "cake",
     img: cake,
-    description: "Cheesecake description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Cheesecake composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -252,7 +269,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Cheesecake",
     type: "cake",
     img: cake,
-    description: "Cheesecake description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Cheesecake composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
@@ -264,7 +282,8 @@ export const PRODUCTS: IProduct[] = [
     name: "Cheesecake",
     type: "cake",
     img: cake,
-    description: "Cheesecake description",
+    description:
+      "The sweet and juicy combo of pink glaze and strawberry jam, introduce withe the Pink Donut as soon as possible.",
     composition: "Cheesecake composition",
     energyValue: 550,
     cookingTime: { min: 5, max: 10 },
