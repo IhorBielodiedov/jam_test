@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { PRODUCTS } from "../../utils/constants";
+import { PRODUCTS, TELEGRAM } from "../../utils/constants";
 import { useEffect, useState } from "react";
 import { IProduct } from "../../utils/types";
 import styles from "./productItemPage.module.scss";
@@ -20,7 +20,11 @@ export function ProductItemPage() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <Link to="/" className={styles.button}>
+        <Link
+          to="/"
+          className={styles.button}
+          onClick={() => TELEGRAM.HapticFeedback.impactOccurred("light")}
+        >
           <ArrowSVG />
         </Link>
         <HeartSVG />
@@ -52,7 +56,9 @@ export function ProductItemPage() {
                 title={"-"}
                 disabled={amount <= 0}
               />
-              <p>{amount}</p>
+              <div className={styles.amount}>
+                <p>{amount}</p>
+              </div>
               <SmallButton
                 onClick={() => setAmount((state) => state + 1)}
                 title={"+"}

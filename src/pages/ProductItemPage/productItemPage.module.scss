@@ -79,6 +79,9 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        .amount {
+          width: 10px;
+        }
       }
     }
   }

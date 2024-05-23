@@ -1,6 +1,7 @@
 import React from "react";
 import "./filterButton.scss";
 import { TFilter } from "../../utils/types";
+import { TELEGRAM } from "../../utils/constants";
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon: string;
@@ -13,7 +14,10 @@ const FilterButton: React.FC<Props> = ({ icon, filter, active, setActive }) => {
   return (
     <button
       className={`animated-button ${active === filter ? "active" : ""}`}
-      onClick={() => setActive(filter)}
+      onClick={() => {
+        TELEGRAM.HapticFeedback.impactOccurred("light");
+        setActive(filter);
+      }}
     >
       <p role="img" aria-label="emoji" className="icon">
         {icon}

@@ -3,6 +3,8 @@ import donut from "../assets/donut.png";
 import croissant from "../assets/croissant.png";
 import cake from "../assets/cake.png";
 
+export const TELEGRAM = window.Telegram.WebApp;
+
 export const PRODUCTS: IProduct[] = [
   {
     id: 0,
